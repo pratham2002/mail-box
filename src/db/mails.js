@@ -11,17 +11,16 @@ export const mails = [
     mId: "3b3aaaa2-bd8a-4192-b144-7d72f0be4f3e",
     unread: true,
     isStarred: false,
-    subject: "Empower your future",
-    content:
-      "We foster our pipeline of future leaders with 47 employee networks and 7 global employee resource groups, servicing an active community of thousands across Microsoft",
+    subject: "8 tips to help you stand out as a freelancer",
+    content: `As a tool for boosting potential, AI can help you grow your freelancing business. And as your home for building a freelance business, we’re here to help with AI tools and resources to supercharge your career.
+    AI is the fastest-growing category on our platform in the first half of 2023. That’s why we’re excited to introduce our new AI Services hub to help businesses quickly connect with independent professionals with AI expertise and find tips for integrating AI into their business.`,
   },
   {
     mId: "f7bd4da9-b7b1-41ce-94a4-4ac16b3d7c8b",
     unread: true,
     isStarred: true,
     subject: "Pre Approved Loan",
-    content:
-      "Congratulations ! <u>Credit card<u> is being shipped to you today!",
+    content: "Congratulations ! Credit card is being shipped to you today!",
   },
   {
     mId: "4437c527-8a93-4079-a81d-15f19bc43f10",
