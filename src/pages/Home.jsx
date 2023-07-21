@@ -1,5 +1,20 @@
-import React from "react";
+import React, { useContext } from "react";
+import { UserContext } from "../context/UserContext";
+import { Outlet } from "react-router-dom";
 
 export default function Home() {
-  return <div>Home</div>;
+  const { userDetails } = useContext(UserContext);
+
+  return (
+    <div>
+      <div style={{ marginBottom: "10px" }}>Home</div>
+      {userDetails?.name ?? "NA"}
+
+      <div style={{ border: "1px solid red", maxWidth: "80%", margin: "auto" }}>
+        <h3>Outlet Info</h3>
+
+        <Outlet />
+      </div>
+    </div>
+  );
 }

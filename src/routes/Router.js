@@ -10,8 +10,7 @@ export default function Router() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/mail">
-        <Route path="" element={<Home />} />
+      <Route path="/mail" element={<Home />}>
         <Route path="inbox">
           <Route path="" element={<Inbox />} />
           <Route path=":id" element={<MessageDetails />} />
