@@ -18,14 +18,13 @@ export default function Mail() {
       <div
         style={{
           left: "13%",
-          position: "fixed",
+          position: "absolute",
           border: "1px solid red",
           maxWidth: "80%",
           margin: "auto",
         }}
       >
         <h3>Outlet Info</h3>
-
         <Outlet />
       </div>
     </div>
