@@ -9,12 +9,6 @@ export default function Home() {
     <div>
       <div style={{ marginBottom: "10px" }}>Home</div>
       {userDetails?.name ?? "NA"}
-
-      <div style={{ border: "1px solid red", maxWidth: "80%", margin: "auto" }}>
-        <h3>Outlet Info</h3>
-
-        <Outlet />
-      </div>
     </div>
   );
 }
