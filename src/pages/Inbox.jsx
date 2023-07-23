@@ -3,7 +3,7 @@ import React from "react";
 export default function Inbox() {
   return (
     <div className="content">
-      <h3>Inbox</h3>
+      <h2 className="heading">Inbox</h2>
       <fieldset
         style={{
           backgroundColor: "#FFF",
@@ -30,6 +30,7 @@ export default function Inbox() {
         />
         <label htmlFor="starred-message">Show Starred Mails</label>
       </fieldset>
+      <h3> Unread: {0}</h3>
     </div>
   );
 }
