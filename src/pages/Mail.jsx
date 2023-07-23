@@ -15,16 +15,7 @@ export default function Mail() {
           Trash
         </NavLink>
       </nav>{" "}
-      <div
-        style={{
-          left: "13%",
-          position: "absolute",
-          border: "1px solid red",
-          maxWidth: "80%",
-          margin: "auto",
-        }}
-      >
-        <h3>Outlet Info</h3>
+      <div className="main-content">
         <Outlet />
       </div>
     </div>

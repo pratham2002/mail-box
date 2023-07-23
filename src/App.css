@@ -59,3 +59,26 @@
     transform: translateY(-4px);
   }
 }
+
+.main-content {
+  left: 13%;
+  box-sizing: border-box;
+  position: absolute;
+  padding-inline: 40px;
+  width: 87%;
+  max-width: 87%;
+  margin: auto;
+}
+
+h3 {
+  text-align: center;
+}
+input,
+label {
+  background-color: var(--white);
+  margin-right: 10px;
+}
+
+.content {
+  width: 100%;
+}
