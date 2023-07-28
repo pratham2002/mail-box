@@ -49,7 +49,7 @@
   left: 13%;
   box-sizing: border-box;
   position: absolute;
-  padding-inline: 40px;
+  padding-inline: 2%;
   width: 87%;
   max-width: 87%;
   margin: auto;
@@ -90,7 +90,7 @@ fieldset > div {
   margin: 1px;
   width: 96%;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
-  transition: box-shadow 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .list-item:hover {
   transform: translateZ(14px);
@@ -101,13 +101,18 @@ fieldset > div {
 .list-heading {
   display: flex;
   justify-content: space-between;
-  height: 35px;
 }
 
+.list-heading > p {
+  font-size: max(1.4vw, 16px);
+  margin-bottom: 0.5em;
+}
+.para {
+  font-size: max(1vw, 14px);
+}
 .btn {
   background-color: white;
   border: none;
-  margin: 0px 20px 15px 20px;
   padding: 8px;
   font-size: 14px;
   cursor: pointer;
@@ -123,7 +128,6 @@ fieldset > div {
   border: none;
   padding: 0px;
   margin: 0px;
-  height: 0px;
   font-size: 14px;
 }
 .trash {
@@ -146,6 +150,12 @@ fieldset > div {
 .footer {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.btn-container {
+  display: flex;
+  column-gap: 10px;
 }
 
 .footer a {
@@ -161,6 +171,9 @@ fieldset > div {
     min-width: 100%;
     z-index: 1;
     animation: slideIn 0.5s ease-in;
+  }
+  .nav-link {
+    margin: 2%;
   }
   .nav-link:hover,
   .nav-link:focus,
@@ -183,6 +196,21 @@ fieldset > div {
     flex-direction: column;
     justify-content: flex-start;
     gap: 5px;
+  }
+  .list-item {
+    padding-inline: 5px;
+    width: 100%;
+  }
+  .footer {
+    flex-direction: column;
+    row-gap: 10px;
+    align-items: flex-start;
+  }
+  .btn-container {
+    display: flex;
+    justify-self: flex-end;
+    align-self: flex-end;
+    column-gap: 10px;
   }
 }
 
