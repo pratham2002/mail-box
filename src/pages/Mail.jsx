@@ -4,14 +4,14 @@ import { NavLink, Outlet } from "react-router-dom";
 export default function Mail() {
   return (
     <div>
-      <nav className="sideNav">
-        <NavLink className="nav-link" to="/inbox">
+      <nav className="sideNav bg-white">
+        <NavLink className="nav-link bg-white" to="/inbox">
           Inbox
         </NavLink>
-        <NavLink className="nav-link" to="/spam">
+        <NavLink className="nav-link bg-white" to="/spam">
           Spam
         </NavLink>
-        <NavLink className="nav-link" to="/trash">
+        <NavLink className="nav-link bg-white" to="/trash">
           Trash
         </NavLink>
       </nav>{" "}

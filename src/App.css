@@ -11,9 +11,12 @@
   box-sizing: border-box;
 }
 
+.bg-white {
+  background-color: var(--white);
+}
+
 .sideNav {
   text-align: center;
-  background-color: var(--white);
   position: fixed;
   padding: 90px 0;
   width: max(13%, 75px);
@@ -24,7 +27,6 @@
 }
 
 .nav-link {
-  background-color: var(--white);
   margin: 5%;
   text-decoration: none;
   position: relative;
@@ -58,7 +60,6 @@
 }
 input,
 label {
-  background-color: var(--white);
   margin-right: 10px;
 }
 
@@ -67,7 +68,6 @@ label {
   text-align: left;
 }
 fieldset {
-  background-color: var(--white);
   border-radius: 5px;
   padding: 10px;
   padding-bottom: 20px;
@@ -79,7 +79,78 @@ fieldset > div {
   flex-direction: row;
   gap: 5px;
 }
+.list {
+  list-style: none;
+  padding-left: 0;
+}
+.list-item {
+  border: solid 0.1px lightgrey;
+  border-radius: 5px;
+  padding-inline: 20px;
+  margin: 1px;
+  width: 96%;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.3s ease-in-out;
+}
+.list-item:hover {
+  transform: translateZ(14px);
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
 
+.list-heading {
+  display: flex;
+  justify-content: space-between;
+  height: 35px;
+}
+
+.btn {
+  background-color: white;
+  border: none;
+  margin: 0px 20px 15px 20px;
+  padding: 8px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.star {
+  text-align: center;
+  width: 60px;
+  height: 30px;
+  margin: 10px 20px 15px 20px;
+}
+.btn-detail {
+  border: none;
+  padding: 0px;
+  margin: 0px;
+  height: 0px;
+  font-size: 14px;
+}
+.trash {
+  color: red;
+}
+.read-unread {
+  color: orange;
+}
+.spam {
+  color: green;
+}
+.not-spam {
+  color: orange;
+}
+
+.restore {
+  color: red;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer a {
+  text-decoration: none;
+}
 @media (max-width: 550px) {
   .sideNav {
     min-height: 0;
