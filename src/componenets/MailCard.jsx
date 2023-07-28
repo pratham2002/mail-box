@@ -11,7 +11,8 @@ export default function MailCard({ mail }) {
     >
       <div className="list-heading">
         <p>
-          <b>Subject : {mail?.subject}</b>
+          {/* <b>Subject : {mail?.subject}</b> */}
+          <b>Subject : Lorem ipsum dolor sit.</b>
         </p>
         <button
           className="btn star"
@@ -21,7 +22,12 @@ export default function MailCard({ mail }) {
         </button>
       </div>
 
-      <p className="para">{mail?.content}</p>
+      {/* <p className="para">{mail?.content}</p> */}
+      <p className="para">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla sint
+        consectetur natus neque modi corporis obcaecati consequuntur laudantium
+        dolorum asperiores.
+      </p>
 
       <div className="footer">
         <button
