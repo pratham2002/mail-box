@@ -37,14 +37,9 @@ export default function Inbox() {
       <h3> Unread: {0}</h3>
 
       <ul className="list">
-        <MailCard />
-        <MailCard />
-        <MailCard />
-        <MailCard />
-        <MailCard />
-        <MailCard />
-        <MailCard />
-        <MailCard />
+        {new Array(15).fill(1).map((e) => (
+          <MailCard />
+        ))}
       </ul>
     </div>
   );
