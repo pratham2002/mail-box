@@ -40,7 +40,7 @@ export default function MailCard({ mail }) {
           //     })
           //   }
         >
-          <NavLink to={`/detail/${mail?.mId}`} style={{ color: "#3366CC" }}>
+          <NavLink to={`${mail?.mId}`} style={{ color: "#3366CC" }}>
             View Details
           </NavLink>
         </button>

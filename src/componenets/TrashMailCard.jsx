@@ -26,7 +26,7 @@ export default function TrashMailCard({ mail }) {
 
       <div className="footer">
         <button className="btn-detail">
-          <NavLink to={`/detail/${mail?.mId}`} style={{ color: "#3366CC" }}>
+          <NavLink to={`${mail?.mId}`} style={{ color: "#3366CC" }}>
             View Details
           </NavLink>
         </button>
