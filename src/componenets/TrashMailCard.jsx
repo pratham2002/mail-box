@@ -1,6 +1,9 @@
+import { useContext } from "react";
 import { NavLink } from "react-router-dom";
+import { MailContext } from "../context/MailContext";
 
 export default function TrashMailCard({ mail }) {
+  const { dispatch } = useContext(MailContext);
   return (
     <li
       className="list-item"
@@ -8,30 +11,42 @@ export default function TrashMailCard({ mail }) {
     >
       <div className="list-heading">
         <p>
-          <b>Subject : Lorem ipsum dolor sit amet. </b>
+          <b>Subject : {mail.subject}</b>{" "}
         </p>
-        <button className="btn star">
-          Star
-          {/* {mail?.isStarred ? "Unstar" : "Star"} */}
+        <button
+          className="btn star"
+          onClick={() =>
+            dispatch({ type: "TOGGLE_STAR_TRASH", mailId: mail.mId })
+          }
+        >
+          {mail?.isStarred ? "Unstar" : "Star"}
         </button>
       </div>
 
-      <p className="para">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut aliquid
-        quasi repellat vel. Dignissimos beatae nemo tempore provident nostrum
-        labore numquam, temporibus enim, harum tenetur odio aliquid, explicabo
-        qui praesentium neque. Sit qui, animi nostrum vel velit laudantium amet?
-        Provident.
-      </p>
+      <p className="para">{mail.content}</p>
 
       <div className="footer">
-        <button className="btn-detail">
+        <button
+          className="btn-detail"
+          onClick={() =>
+            dispatch({
+              type: "MARK_AS_READ",
+              mailId: mail.mId,
+              notToggle: true,
+            })
+          }
+        >
           <NavLink to={`${mail?.mId}`} style={{ color: "#3366CC" }}>
             View Details
           </NavLink>
         </button>
         <div className="btn-container">
-          <button className="btn restore">Restore</button>
+          <button
+            className="btn restore"
+            onClick={() => dispatch({ type: "RESTORE_TRASH", mail: mail })}
+          >
+            Restore
+          </button>
         </div>
       </div>
     </li>
