@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/mail_box/static/css/main.b277f2fa.css",
-    "main.js": "/mail_box/static/js/main.7428317d.js",
+    "main.js": "/mail_box/static/js/main.648064be.js",
     "static/media/logo.svg": "/mail_box/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/mail_box/index.html",
     "main.b277f2fa.css.map": "/mail_box/static/css/main.b277f2fa.css.map",
-    "main.7428317d.js.map": "/mail_box/static/js/main.7428317d.js.map"
+    "main.648064be.js.map": "/mail_box/static/js/main.648064be.js.map"
   },
   "entrypoints": [
     "static/css/main.b277f2fa.css",
-    "static/js/main.7428317d.js"
+    "static/js/main.648064be.js"
   ]
 }
